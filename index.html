@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HSBC UK Customer Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/HSBC_logo_%282018%29.svg/512px-HSBC_logo_%282018%29.svg.png" alt="HSBC Logo" class="logo"/>
+      <h1 class="title">HSBC UK</h1>
+    </header>
+    <form class="form" enctype="multipart/form-data">
+      <label>
+        Full Name:
+        <input type="text" name="fullName" required/>
+      </label>
+      <label>
+        Email Address:
+        <input type="email" name="email" required/>
+      </label>
+      <label>
+        Queries:
+        <textarea name="queries" rows="4" required></textarea>
+      </label>
+      <label>
+        Department:
+        <select name="department" required>
+          <option value="">-- Select Department --</option>
+          <option>Customer Service</option>
+          <option>Loans</option>
+          <option>Credit Cards</option>
+          <option>Investments</option>
+          <option>Fraud</option>
+        </select>
+      </label>
+      <label>
+        Customer Documents:
+        <input type="file" name="documents"/>
+      </label>
+      <label>
+        Remarks:
+        <textarea name="remarks" rows="2"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
